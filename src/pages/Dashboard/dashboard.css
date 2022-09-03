@@ -1,6 +1,7 @@
 .dashboard {
-  padding: 30px;
+  /* padding: 30px; */
   width: 100%;
+  margin: 20px;
 }
 
 .dashboard .ticket__container {

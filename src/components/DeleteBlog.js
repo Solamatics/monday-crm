@@ -1,7 +1,7 @@
 import React from "react";
 
 const DeleteBlog = () => {
-  return <div>DeleteBlog</div>;
+  return <div>DeleteBlock</div>;
 };
 
 export default DeleteBlog;

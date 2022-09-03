@@ -8,16 +8,16 @@ import DeleteBlog from "./DeleteBlog";
 
 import "../index.css";
 
-const TicketCard = () => {
+const TicketCard = ({ color, ticket, status, priority, progress }) => {
   return (
     <div className="ticket__card">
-      <Link to="">
+      <Link to={`/ticket/${ticket.documentId}`} id="link">
         <div className="ticket__color"></div>
-        <h3>title</h3>
-        <AvatarDisplay />
-        <StatusDisplay />
-        <PriorityDisplay />
-        <ProgressDisplay />
+        <h3>{ticket.title}</h3>
+        <AvatarDisplay ticket={ticket} />
+        <StatusDisplay status={status} />
+        <PriorityDisplay priority={priority} />
+        <ProgressDisplay progress={progress} />
       </Link>
       <DeleteBlog />
     </div>
